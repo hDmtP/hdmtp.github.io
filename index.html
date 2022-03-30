@@ -1,27 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hdmtp's atari</title>
     <style>
-        *{
+        * {
             background-color: black;
         }
-        p{
+
+        p {
             color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about_media{
+            color: aqua;
+            margin-bottom: 25px;
+        }
+
+        span {
+            margin: 10px;
+        }
+
+        a {
+            color: rgb(255, 0, 255);
+        }
+        .about{
+            color: aqua;
+        }
+        .hdmtp{
+            color: rgb(251, 255, 0);
+            font-size: larger;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        #media1 {
+            margin-top: 150px;
+        }
+        #media2 {
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
     </style>
 </head>
+
 <body>
-    <p id="ip">Welcome </p>
-    <script>        
-        $.getJSON("https://api.ipify.org?format=json", function(data) {
-            
-            // Setting text of element P with id gfg
-            $("#ip").html(data.ip);
+    <h3>
+        <p id="ip">I love AdBlocker!</p>
+    </h3>
+    <p id="contacts">
+        <span>
+            <a href="https://github.com/hdmtp" target="_blank">GitHub</a>
+        </span>
+        |
+        <span>
+            <a href="https://linkedin.com/in/hdmtp" target="_blank">LinkedIn</a>
+        </span>
+        |
+        <span>
+            <a href="https://github.com/hDmtP/hdmtp.github.io/issues/new" target="_blank">Issue</a>
+        </span>
+    </p>
+<hr>
+    <div class="about">
+        <ul>
+            <li>
+                Hi, Im a 19 yr old dude from WB, India. Call Sign: <a class="hdmtp">hDmtP</a>
+            </li>
+            <li>
+                I currently dont have any idea what to put on this site
+                so it may look a bit disoriented.
+            </li>
+            <li>
+                Its a pretty <a href="https://motherfuckingwebsite.com" target="_blank"> minimalistic </a> website.
+            </li>
+        </ul>
+    </div>
+
+    <div id="media1">
+        <div class="about_media">1. Modern Warfare 2 - Shadow Company Radio Chatter :</div>
+        <a href="https://www.youtube.com/watch?v=Q3GZ2yisL6Q" target="_blank">
+        <img src="shadow_comp_end_game.webp" alt="Shadow Company">
+    </a>
+        <br>
+        <audio controls>
+            <source src="shadow_comp_just_like_old_times_end_game.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+    <div id="media2">
+        <a href="https://www.youtube.com/watch?v=R9B5sU3wdww" target="_blank">
+        <img src="shadow_comp_site_hotel_bravo.webp" alt="Shadow Company">
+    </a>
+        <br>
+        <audio controls>
+            <source src="shadow_comp_site_hotel_bravo.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <hr>
+    <footer>
+        <p id="useragent"></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
+        $.getJSON("https://api.ipify.org?format=json", function (data) {
+            $("#ip").html("Welcome - " + data.ip);
         })
+    </script>
+
+    <script>
+        let agent = navigator.userAgent;
+        agentArr = agent.split(" ");
+        document.getElementById("useragent").innerHTML = "[Browser: " + agentArr[6] + "] - [OS: " + agentArr[2] + " " + agentArr[3] + "]";
         </script>
 </body>
+
 </html>
