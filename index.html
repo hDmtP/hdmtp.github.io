@@ -4,9 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pritam Dhara</title>
+    <title>hdmtp's atari</title>
+    <style>
+        *{
+            background-color: black;
+        }
+        p{
+            color: aqua;
+        }
+    </style>
 </head>
 <body>
-    <p>Contents to be uploaded soon ...</p>
+    <p id="ip">Welcome </p>
+    <script>        
+        $.getJSON("https://api.ipify.org?format=json", function(data) {
+            
+            // Setting text of element P with id gfg
+            $("#ip").html(data.ip);
+        })
+        </script>
 </body>
 </html>
