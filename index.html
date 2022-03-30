@@ -17,7 +17,8 @@
             justify-content: center;
             align-items: center;
         }
-        .about_media{
+
+        .about_media {
             color: aqua;
             margin-bottom: 25px;
         }
@@ -29,10 +30,12 @@
         a {
             color: rgb(255, 0, 255);
         }
-        .about{
+
+        .about {
             color: aqua;
         }
-        .hdmtp{
+
+        .hdmtp {
             color: rgb(251, 255, 0);
             font-size: larger;
             font-family: 'Courier New', Courier, monospace;
@@ -41,14 +44,24 @@
         #media1 {
             margin-top: 150px;
         }
+
         #media2 {
             margin-top: 50px;
             margin-bottom: 50px;
+        }
+
+        #clock {
+            font-size: 17px;
+            text-align: center;
+            border: 2px solid rgb(155, 130, 130);
+            border-radius: 20px;
+            color: aqua;
         }
     </style>
 </head>
 
 <body>
+    <div id="clock">00:00:00</div>
     <h3>
         <p id="ip">I love AdBlocker!</p>
     </h3>
@@ -65,7 +78,7 @@
             <a href="https://github.com/hDmtP/hdmtp.github.io/issues/new" target="_blank">Issue</a>
         </span>
     </p>
-<hr>
+    <hr>
     <div class="about">
         <ul>
             <li>
@@ -84,8 +97,8 @@
     <div id="media1">
         <div class="about_media">1. Modern Warfare 2 - Shadow Company Radio Chatter :</div>
         <a href="https://www.youtube.com/watch?v=Q3GZ2yisL6Q" target="_blank">
-        <img src="shadow_comp_end_game.webp" alt="Shadow Company">
-    </a>
+            <img src="shadow_comp_end_game.webp" alt="Shadow Company">
+        </a>
         <br>
         <audio controls>
             <source src="shadow_comp_just_like_old_times_end_game.mp3" type="audio/mpeg">
@@ -94,8 +107,8 @@
     </div>
     <div id="media2">
         <a href="https://www.youtube.com/watch?v=R9B5sU3wdww" target="_blank">
-        <img src="shadow_comp_site_hotel_bravo.webp" alt="Shadow Company">
-    </a>
+            <img src="shadow_comp_site_hotel_bravo.webp" alt="Shadow Company">
+        </a>
         <br>
         <audio controls>
             <source src="shadow_comp_site_hotel_bravo.mp3" type="audio/mpeg">
@@ -121,7 +134,41 @@
         agentArr = agent.split(" ");
         // document.getElementById("useragent").innerHTML = "[Browser: " + agentArr[6] + "] - [OS: " + agentArr[2] + " " + agentArr[3] + "]";
         document.getElementById("useragent").innerHTML = agent;
-        </script>
+    </script>
+
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            let today = new Date();
+            let date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec +" "+ am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = date+" "+currentTime;
+        }
+        showTime();
+
+    </script>
 </body>
 
 </html>
