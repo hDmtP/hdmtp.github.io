@@ -6,58 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hdmtp's atari</title>
-    <style>
-        * {
-            background-color: black;
-        }
-
-        p {
-            color: aqua;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .about_media {
-            color: aqua;
-            margin-bottom: 25px;
-        }
-
-        span {
-            margin: 10px;
-        }
-
-        a {
-            color: rgb(255, 0, 255);
-        }
-
-        .about {
-            color: aqua;
-        }
-
-        .hdmtp {
-            color: rgb(251, 255, 0);
-            font-size: larger;
-            font-family: 'Courier New', Courier, monospace;
-        }
-
-        #media1 {
-            margin-top: 150px;
-        }
-
-        #media2 {
-            margin-top: 50px;
-            margin-bottom: 50px;
-        }
-
-        #clock {
-            font-size: 17px;
-            text-align: center;
-            border: 2px solid rgb(155, 130, 130);
-            border-radius: 20px;
-            color: aqua;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -77,6 +26,10 @@
         <span>
             <a href="https://github.com/hDmtP/hdmtp.github.io/issues/new" target="_blank">Issue</a>
         </span>
+        |
+        <span>
+            <a href="blog.html">Blog</a>
+        </span>
     </p>
     <hr>
     <div class="about">
@@ -94,26 +47,42 @@
         </ul>
     </div>
 
-    <div id="media1">
-        <div class="about_media">1. Modern Warfare 2 - Shadow Company Radio Chatter :</div>
-        <a href="https://www.youtube.com/watch?v=Q3GZ2yisL6Q" target="_blank">
-            <img src="shadow_comp_end_game.webp" alt="Shadow Company">
-        </a>
-        <br>
-        <audio controls>
-            <source src="shadow_comp_just_like_old_times_end_game.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+    <div class="about_media">1. Modern Warfare 2 - Shadow Company Radio Chatter :</div>
+    <div class="mw2">
+        <div id="media1">
+            <a href="https://www.youtube.com/watch?v=Q3GZ2yisL6Q" target="_blank">
+                <img src="shadow_comp_end_game.webp" alt="Shadow Company">
+            </a>
+            <br>
+            <audio controls>
+                <source src="shadow_comp_just_like_old_times_end_game.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+        <div id="media2">
+            <a href="https://www.youtube.com/watch?v=R9B5sU3wdww" target="_blank">
+                <img src="shadow_comp_site_hotel_bravo.webp" alt="Shadow Company">
+            </a>
+            <br>
+            <audio controls>
+                <source src="shadow_comp_site_hotel_bravo.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </div>
-    <div id="media2">
-        <a href="https://www.youtube.com/watch?v=R9B5sU3wdww" target="_blank">
-            <img src="shadow_comp_site_hotel_bravo.webp" alt="Shadow Company">
-        </a>
-        <br>
-        <audio controls>
-            <source src="shadow_comp_site_hotel_bravo.mp3" type="audio/mpeg">
-            Your browser does not support the audio element.
-        </audio>
+
+    <div class="about_media">2. Modern Warfare 2 - DC Evac Radio Chatter :</div>
+    <div class="mw2">
+        <div class="media3">
+            <a href="https://www.youtube.com/watch?v=QV_C0G1KawU" target="_blank">
+                <img src="mw2_dc_radio_chatter.jpg" alt="DC Evac">
+            </a>
+            <br>
+            <audio controls>
+                <source src="dc_evac.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
     </div>
 
     <hr>
@@ -144,7 +113,7 @@
             let min = time.getMinutes();
             let sec = time.getSeconds();
             let today = new Date();
-            let date = today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
+            let date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
             am_pm = "AM";
 
             if (hour > 12) {
@@ -161,10 +130,10 @@
             sec = sec < 10 ? "0" + sec : sec;
 
             let currentTime = hour + ":"
-                + min + ":" + sec +" "+ am_pm;
+                + min + ":" + sec + " " + am_pm;
 
             document.getElementById("clock")
-                .innerHTML = date+" "+currentTime;
+                .innerHTML = date + " " + currentTime;
         }
         showTime();
 

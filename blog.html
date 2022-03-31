@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hdmtp's atari</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="clock">00:00:00</div>
+    <h3>
+        <p id="ip">[U love AdBlocker?]</p>
+    </h3>
+    <p id="contacts">
+        <span>
+            <a href="https://github.com/hdmtp" target="_blank">GitHub</a>
+        </span>
+        |
+        <span>
+            <a href="https://linkedin.com/in/hdmtp" target="_blank">LinkedIn</a>
+        </span>
+        |
+        <span>
+            <a href="https://github.com/hDmtP/hdmtp.github.io/issues/new" target="_blank">Issue</a>
+        </span>
+        |
+        <span>
+            <a href="/index.html">Home</a>
+        </span>
+    </p>
+    <hr>
+
+    <div class="blog_container">
+       Blog
+    </div>
+
+    <hr>
+    <footer>
+        <p id="useragent"></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+    <script>
+        $.getJSON("https://api.ipify.org?format=json", function (data) {
+            $("#ip").html("Welcome - " + data.ip);
+        })
+    </script>
+
+    <script>
+        let agent = navigator.userAgent;
+        agentArr = agent.split(" ");
+        // document.getElementById("useragent").innerHTML = "[Browser: " + agentArr[6] + "] - [OS: " + agentArr[2] + " " + agentArr[3] + "]";
+        document.getElementById("useragent").innerHTML = agent;
+    </script>
+
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            let today = new Date();
+            let date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec + " " + am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = date + " " + currentTime;
+        }
+        showTime();
+
+    </script>
+</body>
+
+</html>
