@@ -36,6 +36,7 @@ img {
 
 .about {
     color: aqua;
+    margin-top: 50px;
 }
 .blog_container {
     color: #fff;
@@ -59,8 +60,18 @@ img {
 
 .hdmtp {
     color: rgb(251, 255, 0);
+    animation: animate 1s steps(1) infinite;
     font-size: larger;
     font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes animate{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
 }
 
 /* #media1 {
