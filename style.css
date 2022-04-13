@@ -30,7 +30,12 @@ span {
 }
 
 a {
-    color: #fff;
+    color: yellow;
+    text-decoration: none;
+}
+a:hover{
+    border-top: 1px solid yellow;
+    border-bottom: 1px solid yellow;
 }
 
 img {
