@@ -59,6 +59,12 @@ img {
     border: 1px solid yellow;
     margin-bottom: 15px;
 } */
+.search, input{
+    color: aliceblue;
+}
+main{
+    margin-top: 100px;
+}
 article {
     color: #fff;
     line-height: 1.4;
