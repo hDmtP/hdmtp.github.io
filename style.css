@@ -19,6 +19,13 @@ p {
     animation: blog 2s linear infinite;
 }
 
+note{
+    opacity: 0.7;
+}
+note:hover{
+    border-bottom: 1px solid whitesmoke;
+}
+
 .about_media {
     color: aqua;
     margin-top: 75px;
