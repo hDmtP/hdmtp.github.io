@@ -110,7 +110,7 @@ code, textarea {
     font-size: 1em;
     opacity: 30;
 }
-foreignObject{
+svg, foreignObject{
     margin: auto;
 }
 
