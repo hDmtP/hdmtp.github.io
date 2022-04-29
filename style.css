@@ -6,7 +6,7 @@ body {
     font-family: JetBrains Mono, system-ui, sans-serif;
 }
 
-p {
+#contacts, #ip, p {
     color: aqua;
     display: flex;
     justify-content: center;
@@ -89,8 +89,8 @@ time {
     font-weight: 400;
     opacity: .7;
 }
-pre, textarea {
-    font-size: .9em;
+pre, textarea, input {
+    font-size: 1em;
     color: inherit;
     line-height: inherit;
     padding: .6em .9em;

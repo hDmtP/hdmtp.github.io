@@ -6,15 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>hdmtp's atari</title>
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<style>
+    .search-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        color: white;
+    }
+
+    .blog-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+        gap: .25rem;
+        margin-top: 1rem;
+    }
+
+    .hide {
+        display: none;
+    }
+</style>
 
 <body>
     <div id="clock">00:00:00</div>
     <h3>
-        <p id="ip">[U love AdBlocker?]</p>
+        <div id="ip">[U love AdBlocker?]</div>
     </h3>
-    <p id="contacts">
+    <div id="contacts">
         <span>
             <a href="https://github.com/hdmtp" target="_blank">GitHub</a>
         </span>
@@ -30,16 +51,17 @@
         <span>
             <a href="/index.html">Home</a>
         </span>
-    </p>
+    </div>
     <hr>
 
-    <div class="search">
-        <label for="search">press (ctrl + F) to search ;) </label>
-        <!-- <input type="search" id="search" blog-search> -->
+    <div class="search-wrapper">
+        <!-- <label for="search">Search blog</label> -->
+        <input type="search" id="search" placeholder="Search 🔎" data-search>
     </div>
+    <div class="blog-cards">
 
 
-    <main>
+        <!-- <main> -->
 
         <!-- <article>
             <h4>
@@ -68,10 +90,13 @@
                 <p>Finally, its over!</p>
                 <text>
                     <li>1. Woke up at 7:20</li>
-                    <li>2. Reached KLYS at 9:48; used Railwire wifi in Ichapur. For the first time I used Railwire wifi.
-                        I had to give my mobile number, them confirmed my OTP and now I can use wifi for 30 minutes for
+                    <li>2. Reached KLYS at 9:48; used Railwire wifi in Ichapur. For the first time I used Railwire
+                        wifi.
+                        I had to give my mobile number, them confirmed my OTP and now I can use wifi for 30 minutes
+                        for
                         FREE. There was also a pro option for fast wifi.</li>
-                    <li>3. <a href="https://indiarailinfo.com/train/17265" target="_blank">[31319]</a> arrived at 9:13
+                    <li>3. <a href="https://indiarailinfo.com/train/17265" target="_blank">[31319]</a> arrived at
+                        9:13
                         (Impressive!). 71000 series BESCO rake</li>
                     <li>4. Arrived at KLYS at 9:50 (again, Impressive!)</li>
                     <li>5. Library was open today but we decided to stay in the 2nd floor.
@@ -83,21 +108,29 @@
                         </figure>
                         <br>
                         I informed them that Im gonna end my exam within 15 mins after signing in the register and
-                        getting my paper signed by the invigilator cuz its the last day and I will board `train no` from
+                        getting my paper signed by the invigilator cuz its the last day and I will board `train no`
+                        from
                         KLYS. Its scheduled time of arrival was 14:25 but arrived at 14:21, just when I achieved my
-                        perfect spot for onboarding in the platform. I was not alone though, multiple guys did the same
+                        perfect spot for onboarding in the platform. I was not alone though, multiple guys did the
+                        same
                         thing.
                     </li>
                     <li>
-                        Arrived at IP at 15:00 (at this time I would have just reached KYI bruhh..) and home at 15:17
+                        Arrived at IP at 15:00 (at this time I would have just reached KYI bruhh..) and home at
+                        15:17
                         (by this time I would have still been in KYI).
                     </li>
                     <li>
-                        At around 00:04 (day of posting this blog basically) I clicked to watch Nikto's voicelines on
-                        youtube. 24 mins long. So I laid down on my bed, wearing headset, to listen to it. Then mom came
-                        and wake me up at 02:49. F U C K. My laptop on, wifi, router still on, mobile still on charging.
-                        Just shutdown my laptop, turned off wifi and headed for sleep. She was not mad this time. After
-                        waking up at 9:17, I saw my phone was still on charging (😬). Gladly it wasnt on fast charging
+                        At around 00:04 (day of posting this blog basically) I clicked to watch Nikto's voicelines
+                        on
+                        youtube. 24 mins long. So I laid down on my bed, wearing headset, to listen to it. Then mom
+                        came
+                        and wake me up at 02:49. F U C K. My laptop on, wifi, router still on, mobile still on
+                        charging.
+                        Just shutdown my laptop, turned off wifi and headed for sleep. She was not mad this time.
+                        After
+                        waking up at 9:17, I saw my phone was still on charging (😬). Gladly it wasnt on fast
+                        charging
                         mode.
                     </li>
                 </text>
@@ -115,7 +148,8 @@
                     <li>1. Woke up at 7:22</li>
                     <li>2. Reached KLYS at 9:48</li>
                     <li>3. 11:12 Librarian didnt show up. So the library was closed. It was the only cold and
-                        confortable place in the entire clg. So we ended up in the 1st floor. It was hot. But soon we
+                        confortable place in the entire clg. So we ended up in the 1st floor. It was hot. But soon
+                        we
                         abandoned it as the room was scheduled for a class. So we went to the 2nd floor and found
                         ourselves an empty room. It was more hotter. Anyways we (4 guys) somehow passed our time.
                         <br>
@@ -124,10 +158,13 @@
                             &nbsp;Trying to sleep in ~45°C of temp & >90% humidity is probly not easy
                         </figure>
                         <br>
-                        Place was crawling with couples (couples r fucking everywhere!). At 13:42 I suggested them lets
-                        visit the 3rd floor and the rooftop also. No one of us have been there before. In 3rd floor 2 of
+                        Place was crawling with couples (couples r fucking everywhere!). At 13:42 I suggested them
+                        lets
+                        visit the 3rd floor and the rooftop also. No one of us have been there before. In 3rd floor
+                        2 of
                         us locked me and the other guy in a small room (avg joke). But soon they discovered buch of
-                        blank papers, copies and a WBUT Maths Book. They took em all (I didnt even stole a dust frm that
+                        blank papers, copies and a WBUT Maths Book. They took em all (I didnt even stole a dust frm
+                        that
                         almirah but I dont care). We visited the roofs. All I saw was a worker and
                         bunch of beer bottles.
                         <br>
@@ -138,18 +175,21 @@
                         <br>
                         We took 2 selfies and then headed for the exam hall.
                     </li>
-                    <li> After finishing exam took an auto and reached KYI at ~14:41. Bought a 7 up today. Better than
+                    <li> After finishing exam took an auto and reached KYI at ~14:41. Bought a 7 up today. Better
+                        than
                         Pepsi.</li>
                     <br>
                     <figure>
                         <a href="/overbridge_kyi.jpeg" target="_blank"><img src="overbridge_kyi.jpeg" alt=""></a>
-                        &nbsp;me omw to PF 3 from PF 4. Fully empty overbridge but a couple emerging at the very end out
+                        &nbsp;me omw to PF 3 from PF 4. Fully empty overbridge but a couple emerging at the very end
+                        out
                         of nowhere
                     </figure>
                     <br>
                     <li> Headed to PF 3. Boarded <a href="https://indiarailinfo.com/train/14539"
                             target="_blank">[31828]</a> before <a href="https://indiarailinfo.com/train/17856"
-                            target="_blank">[31528]</a> as it was a Bombardier Rake and I cant resist to have a ride on
+                            target="_blank">[31528]</a> as it was a Bombardier Rake and I cant resist to have a ride
+                        on
                         this thing. Deboarded at KPA.
                         <br>
                         <figure>
@@ -160,7 +200,8 @@
                         <br>
                         Next stoppage was NH, BP, DDJ, SDAH. There was a slight windflow
                         in KPA PF2 (better comfort than KYI PF3). <a href="https://indiarailinfo.com/train/17856"
-                            target="_blank">[31528]</a> arrived at KPA at 15:33. Arrived destination at 16:02. Reached
+                            target="_blank">[31528]</a> arrived at KPA at 15:33. Arrived destination at 16:02.
+                        Reached
                         home at 16:15.
                     </li>
                 </text>
@@ -177,21 +218,26 @@
                 <text>
                     <li>1. Woke up at 7:20</li>
                     <li>2. Reached KLYS at 9:53</li>
-                    <li>3. ~14:10 A couple started making out in an empty classroom, disregarding the fact that I was
+                    <li>3. ~14:10 A couple started making out in an empty classroom, disregarding the fact that I
+                        was
                         also present
                         there with them in that same room</li>
-                    <li>4. At around 13:40 more that a dozen of Seniors arrived like a group of DOGS during the month of
+                    <li>4. At around 13:40 more that a dozen of Seniors arrived like a group of DOGS during the
+                        month of
                         AUG/SEP (didnt get
-                        the reference? lol!) for collecting that ₹1000. Around 13 losers just surrounded me and tried to
+                        the reference? lol!) for collecting that ₹1000. Around 13 losers just surrounded me and
+                        tried to
                         explain me the consequences of their demand's negation.</li>
                     <li>5. ~14:55 Bought myself a Pepsi (750ml/₹40) after reaching KYI</li>
-                    <li>6. 15:35 Got <a href="https://indiarailinfo.com/train/17856" target="_blank">[31528]</a>, less
+                    <li>6. 15:35 Got <a href="https://indiarailinfo.com/train/17856" target="_blank">[31528]</a>,
+                        less
                         crowd till NH, but Heat wind f'cked me up.</li>
                     <li>7. ~16:15 Arrived at home.</li>
                     <br>
                     <hr>
                     <br>
-                    3. So after the first part of CA3 (Discrete Math.) I headed towards the Library at around 11:13. For
+                    3. So after the first part of CA3 (Discrete Math.) I headed towards the Library at around 11:13.
+                    For
                     first 8 mins it was quiet, low heat, very few people.
                     <br>
                     <figure>
@@ -207,77 +253,112 @@
                     </figure>
                     <br>
                     Was perfectly fine with their presence. But u know whats the
-                    problem with these dipshits, they came and started fucking my mind up even though I was minding my
+                    problem with these dipshits, they came and started fucking my mind up even though I was minding
+                    my
                     own business. Listen up Dipshits, I am a creature who has adapted to the crushing pressure and
                     oppressive darkness. From being bullied by my cousins to my tution teachers (especially my art
                     teacher) to my classmates from the nursery to 12th class, but still not broken, still trying to
-                    find smthing worth living for, shits like these doesnt bother me now. If u r reading this somehow,
+                    find smthing worth living for, shits like these doesnt bother me now. If u r reading this
+                    somehow,
                     put this in ur pea-sized brain that
-                    you fall under those peoples whom I dont give a fuck. Literally all of my previous classmates (i.e.
+                    you fall under those peoples whom I dont give a fuck. Literally all of my previous classmates
+                    (i.e.
                     from HS Tution, High School, Middle School and I dont really remember much about my nursery)
                     come undr this category. So u can 1. GO FUCK URSELF. 2. DESTROY THE WHOLE UNIVERSE, 3. BECOME A
-                    FRICKING GOD, these shits doesnt bother me. Cuz u, little piece of shit stains, u DO NOT MATTER. I
+                    FRICKING GOD, these shits doesnt bother me. Cuz u, little piece of shit stains, u DO NOT MATTER.
+                    I
                     repeat U DO NOT
-                    MATTER, UR EXISTANCE IS OF NO SIGNIFICANCE to me. So u, rotten cocksuckers, GO, EAT SHIT and D I E
-                    while I live in the Simulation. This is the last time Im going to waste my time on these worthless
+                    MATTER, UR EXISTANCE IS OF NO SIGNIFICANCE to me. So u, rotten cocksuckers, GO, EAT SHIT and D I
+                    E
+                    while I live in the Simulation. This is the last time Im going to waste my time on these
+                    worthless
                     piece of craps.
                     <br>
                     <br>
                     So becuz of this I left the library room and started looking for a less crowded classroom in the
-                    ground floor. Here all the rooms were crawling with Seniors. So I kinda hopelessly went to 1st floor
-                    to check if there was any. Fortunately I found one of my choice at around 12:42. That class room was
-                    pretty big. 3 columns of benches with 8 benches in each column. I took a seat at the 3rd bench in
-                    middle column. I was really having a good time as I always do when Im alone. At around 12:55 a girl
+                    ground floor. Here all the rooms were crawling with Seniors. So I kinda hopelessly went to 1st
+                    floor
+                    to check if there was any. Fortunately I found one of my choice at around 12:42. That class room
+                    was
+                    pretty big. 3 columns of benches with 8 benches in each column. I took a seat at the 3rd bench
+                    in
+                    middle column. I was really having a good time as I always do when Im alone. At around 12:55 a
+                    girl
                     (probly a senior) asked me
-                    from the doorway if I was giving an exam there (which is strange in 2 ways, 1. Everybody knows the
-                    2nd exam starts from 14:00, and 2. Literally every girl/lady bugs the fuck out whenever they see my
+                    from the doorway if I was giving an exam there (which is strange in 2 ways, 1. Everybody knows
+                    the
+                    2nd exam starts from 14:00, and 2. Literally every girl/lady bugs the fuck out whenever they see
+                    my
                     expressionless face.). I replied that no no Im just sitting here under the fan becuz of the
                     scorching heat outside. She said okay and
                     then called in a dude who was standing nearby. That dude looked kinda hesitant. I even heard him
                     whispering to her, 'I dont think this is the right place'. His caution seemed to be regarding my
-                    presence. By that time I understood that they were a couple. But his gf insisted that they should
+                    presence. By that time I understood that they were a couple. But his gf insisted that they
+                    should
                     stay in this room for now as there is heatwave outside in the campus. So they took a sit at 7th
                     bench of the 1st column, 3 benches behind me on my right side. Her bf started playing f'cking
                     romantic bollywood songs in his mobile and started chatting with each other. Now, I have been
                     through such
                     hrs where I will try to be as much focused as I can on my phone while couples around me do their
                     relationship stuffs. But this couple just went too far. While I was busy reading notes I started
-                    hearing a sound. From all the porns I have watched so far, I could say that sound was the result of
+                    hearing a sound. From all the porns I have watched so far, I could say that sound was the result
+                    of
                     friction between two sloppy lips, i.e. they were intimately kissing. They were tightly closed to
                     each other, studying & discussing their notes together and kissing each other after a specific
                     interval. This isnt probably smthing strange for a couple BUT HOW THE HELL COULD THEY IGNORE THE
-                    FACT that there is a guy sitting next to them, without wearing any headphones and fully conscious of
+                    FACT that there is a guy sitting next to them, without wearing any headphones and fully
+                    conscious of
                     his surroundings. Whats even worse is that I
-                    cant even turn around and stare at them making out. All I did is take a quick glance to confirm my
-                    thought process and YES, they were already in 1st base. I can hear them talking about marrying each
-                    other after their graduation and how much she love him followed by multiple intimate kiss. Now I am
+                    cant even turn around and stare at them making out. All I did is take a quick glance to confirm
+                    my
+                    thought process and YES, they were already in 1st base. I can hear them talking about marrying
+                    each
+                    other after their graduation and how much she love him followed by multiple intimate kiss. Now I
+                    am
                     someone who is already dead inside.
-                    I was not really in a state of comparing myself with them. The thing that is still bugging the f'ck
-                    outta me is, was it a really good idea to get intimate in a room where another guy was also present
-                    and can literally record that shit and circulate it around the whole clg although Im not that kinda
+                    I was not really in a state of comparing myself with them. The thing that is still bugging the
+                    f'ck
+                    outta me is, was it a really good idea to get intimate in a room where another guy was also
+                    present
+                    and can literally record that shit and circulate it around the whole clg although Im not that
+                    kinda
                     ahole.
                     They probably thought that either I would not notice or Im just a dumbass they dont care about.
                     <br>
                     <br>
-                    4. A gr of Seniors entered in the hall and started acting like a desi gangstar to the other popular
-                    a$$holes of my class. They were doing their shit while I was sitting in a corner probably thinking
-                    they will not notice me. But finally 4 Seniors approached me and circled around me. One of them ,
-                    being a jerk, barked at me to stand up but them immediately another one of them told him to stop as
-                    he probably knew that behaviour comes under ragging. Then they started saying that it is compulsory
-                    in every other clgs, its ur fest, come and eat shit in this fest. Meanwhile that jerk, resting his
-                    hand over my shoulders, kept barking that Im a good boy and that I should pay the money. Bro u can
-                    eat the hairest part of my ass if u think that kinda attitude lmao. They made me say yes to their
+                    4. A gr of Seniors entered in the hall and started acting like a desi gangstar to the other
+                    popular
+                    a$$holes of my class. They were doing their shit while I was sitting in a corner probably
+                    thinking
+                    they will not notice me. But finally 4 Seniors approached me and circled around me. One of them
+                    ,
+                    being a jerk, barked at me to stand up but them immediately another one of them told him to stop
+                    as
+                    he probably knew that behaviour comes under ragging. Then they started saying that it is
+                    compulsory
+                    in every other clgs, its ur fest, come and eat shit in this fest. Meanwhile that jerk, resting
+                    his
+                    hand over my shoulders, kept barking that Im a good boy and that I should pay the money. Bro u
+                    can
+                    eat the hairest part of my ass if u think that kinda attitude lmao. They made me say yes to
+                    their
                     demands and leaves. I mean what can I do in such situation. My hands r tied with legal rules. I
-                    literally have no weapon to fight with them except my bare hands. But meeling dozen of them with my
-                    bare hands is probably not a good idea. Atleast need a knife or dagger will be enough to neutralize
-                    25% of them. And with a handgun, the probability becomes 80%. But again my hands r tied with laws. 5
+                    literally have no weapon to fight with them except my bare hands. But meeling dozen of them with
+                    my
+                    bare hands is probably not a good idea. Atleast need a knife or dagger will be enough to
+                    neutralize
+                    25% of them. And with a handgun, the probability becomes 80%. But again my hands r tied with
+                    laws. 5
                     mins after they leave, my mother calls me to ask about the seniors regarding the ₹1000. What an
-                    instinct! Anyways she advised me not to take any troubles and give them the ₹1000 next day. But one
+                    instinct! Anyways she advised me not to take any troubles and give them the ₹1000 next day. But
+                    one
                     thing for sure, they r going to pay, at some point in their life, Trust me :)
                     <br>
                     <br>
-                    5. Exam finished before 15:00. Bought a Pepsi bottle even though there were many better alternatives
-                    like Mnt Dew, lassi, Ampanna, Various drinks of Amul, Mazza, Frooti but no Sprite :( Never gonna buy
+                    5. Exam finished before 15:00. Bought a Pepsi bottle even though there were many better
+                    alternatives
+                    like Mnt Dew, lassi, Ampanna, Various drinks of Amul, Mazza, Frooti but no Sprite :( Never gonna
+                    buy
                     pepsi next time as it contain Caffeine.
                 </text>
             </div>
@@ -293,20 +374,25 @@
                     <p>...and for what?</p>
                     <text>
                         Just becuz I go to sleep late at night! Well lets see what u r gonna do about it. Woke me up
-                        at 7:30. + ordering me to go to the saloon even when I told her Im not willing to do so. Though
+                        at 7:30. + ordering me to go to the saloon even when I told her Im not willing to do so.
+                        Though
                         her
-                        advice was pretty solid (Saturday => less crowd, + Summer + Upcoming 30 hrs of time waste) but
+                        advice was pretty solid (Saturday => less crowd, + Summer + Upcoming 30 hrs of time waste)
+                        but
                         my
                         lazy
-                        introvert ass didnt wanted to step outside. It was very much acceptable if she would'v declared
+                        introvert ass didnt wanted to step outside. It was very much acceptable if she would'v
+                        declared
                         me a
                         dumbass (which I am) BUT she lost her sh*t and started yelling at me like a maniac.
                         <br><br>
                         Cleaning the whole ass house, washing clothes & dishes, cooking foods, paying Internet &
                         Electricity
-                        bills - these r the things Im depended upon them (parents). My primary focus is to pay for the
+                        bills - these r the things Im depended upon them (parents). My primary focus is to pay for
+                        the
                         Internet &
-                        Electricity by my own (this is one of the major target for most of the people around my age).
+                        Electricity by my own (this is one of the major target for most of the people around my
+                        age).
                     </text>
                 </div>
             </article>
@@ -320,8 +406,10 @@
                     <div style="padding: 30px; border: 1px solid yellow;">
                         <p>Location of visit : Near Metal and Steel Factory Ishapore</p>
                         <text>
-                            Purpose? Well our family members needed to sumbmit their biometric id for our Ration Card.
-                            So I had to go there in person. Otherwise I would've been in my home for straight 3 weeks.
+                            Purpose? Well our family members needed to sumbmit their biometric id for our Ration
+                            Card.
+                            So I had to go there in person. Otherwise I would've been in my home for straight 3
+                            weeks.
                             Also first time in my life I spotted an Electric Vehicle in my hometown as well as irl.
                             Unfortunately, I couldnt snap a pic of it and also cant remeber its damm name except
                             it started with letter 'L'. The design was way good than I expected it to be as an
@@ -340,7 +428,8 @@
                             <br><br>
                             From 10:30 to 11:30 | 2.5 hrs of long ass break | 14:00 to 15:00
                             <br><br>
-                            Have to wake up at *7:30, Bath at *7:45, Breakfast at *8:00, Heading for Station on cycle at
+                            Have to wake up at *7:30, Bath at *7:45, Breakfast at *8:00, Heading for Station on
+                            cycle at
                             *8:30,
                             Keep the cycle in garage (₹5), Cut a RETURN Ticket of KLYN (₹20), wait in PF-1 at around
                             *8:50,
@@ -349,24 +438,30 @@
                             *9:21,
                             Get up
                             in the 1st door 4th coach, arrive at destination [KLYS] at *10:00,
-                            Confirm ur Token (i.e. if current semester fees is cleared or not), Get in ur room [102] at
+                            Confirm ur Token (i.e. if current semester fees is cleared or not), Get in ur room [102]
+                            at
                             *10:15,
-                            deal with the mfs' mfking mfkingness for 4.5 hrs (GOD testing my Persistence and Rigidity),
+                            deal with the mfs' mfking mfkingness for 4.5 hrs (GOD testing my Persistence and
+                            Rigidity),
                             board an
                             auto
                             and head for [KYI] (₹10), go to PF-3, wait for <a
                                 href="https://indiarailinfo.com/train/17856" target="_blank">[31528]</a> (5-10 mins
-                            before) or <a href="https://indiarailinfo.com/train/14516" target="_blank">[31922]</a> (more
+                            before) or <a href="https://indiarailinfo.com/train/14516" target="_blank">[31922]</a>
+                            (more
                             comfort),
-                            train arrives at *15:30, arrive at my station at *16:10, take the cycle from the garage and
+                            train arrives at *15:30, arrive at my station at *16:10, take the cycle from the garage
+                            and
                             head
                             for
-                            home, arrive at home at *16:25, wash my bodyparts, have lunch, settle down, finally opens mt
+                            home, arrive at home at *16:25, wash my bodyparts, have lunch, settle down, finally
+                            opens mt
                             PC
                             at
                             *17:30
                             <br><br><br>
-                            Now this cycle continues for 3 days. That means a total of (17.30 - 7.30) * 3 = 30 Hours of
+                            Now this cycle continues for 3 days. That means a total of (17.30 - 7.30) * 3 = 30 Hours
+                            of
                             Time
                             Waste. Cool. Fuck yeah!😫
                             <br><br>
@@ -386,18 +481,22 @@
                             For the past 3 days I was wondering wtf is this RSS feed link on each of these guys'
                             website.
                             <br><br>
-                            1.&nbsp; I saw this rss thing on their website. I decided (or procastinated) to look into it
+                            1.&nbsp; I saw this rss thing on their website. I decided (or procastinated) to look
+                            into it
                             the
                             next day.
                             <br>
                             <hr>
-                            2.&nbsp; Next day arrived. My lazy a$$ just browsed a few youtube videos regarding rss. All
+                            2.&nbsp; Next day arrived. My lazy a$$ just browsed a few youtube videos regarding rss.
+                            All
                             I
                             found
                             was
-                            dudes from 2009-2012 talking about wordpress and integrating rss feed there. I immediately
+                            dudes from 2009-2012 talking about wordpress and integrating rss feed there. I
+                            immediately
                             lost
-                            interest and closed those videos. I also Google searched the term RSS and all I understood
+                            interest and closed those videos. I also Google searched the term RSS and all I
+                            understood
                             that
                             it's
                             purpose is to
@@ -405,7 +504,8 @@
                             that
                             its
                             useless to me as
-                            &nbsp;nowadays there are plenty of ways to get a user updated of latest blog articles. So I
+                            &nbsp;nowadays there are plenty of ways to get a user updated of latest blog articles.
+                            So I
                             stopped
                             thinking about it.
                             <br>
@@ -414,13 +514,17 @@
                                 target="_blank">S.S.D.D</a>
                             <br>
                             <hr>
-                            4. &nbsp; The day of publishing this blog. Approximately near the evening the group admins
+                            4. &nbsp; The day of publishing this blog. Approximately near the evening the group
+                            admins
                             decided
-                            to integrate RSS feed from various site to their group. So I kinda started wondering about
+                            to integrate RSS feed from various site to their group. So I kinda started wondering
+                            about
                             RSS
-                            again. Then got the RSS link of one of those guy's website and found out .xml file. After
+                            again. Then got the RSS link of one of those guy's website and found out .xml file.
+                            After
                             going
-                            through the xml file I mostly understood about RSS and added this feature in my website too.
+                            through the xml file I mostly understood about RSS and added this feature in my website
+                            too.
                         </text>
                     </div>
                 </article>
@@ -516,20 +620,24 @@
                     </h4>
                     <div style="padding: 30px; border: 1px solid yellow;">
                         <p>They continuosly FAIL to manipulate me</p>
-                        <text>why i dont interact with my colleagues and teachers? cuz i think that is going to be fking
+                        <text>why i dont interact with my colleagues and teachers? cuz i think that is going to be
+                            fking
                             waste
                             of time for me. I dont wanna say it but my clg (<note>and others</note>)
-                            + the Education System has become a CULT. Plus there is also a few students who just always
+                            + the Education System has become a CULT. Plus there is also a few students who just
+                            always
                             wants to
                             dominate each and every environment. Anything goes slightly against
-                            their plans and they will start a drama (<note>to catch attention</note>). In my first yrs I
+                            their plans and they will start a drama (<note>to catch attention</note>). In my first
+                            yrs I
                             didnt
                             understand wtf
                             is wrong. Cuz I didnt know back then that this kinda shitty
                             syndrome was a thing. Funny thing is infact a guy in my class had multiple face off with
                             that
                             dude.
-                            He literally dropped out in 3rd sem just becuz he couldnt bear with that kinda shit (<note>
+                            He literally dropped out in 3rd sem just becuz he couldnt bear with that kinda shit (
+                            <note>
                                 Although
                                 he
                                 himself was kinda partially responsible in that scenario. Moreover he was also
@@ -539,23 +647,28 @@
                             admission to any clg or
                             university I have gone through tones of
                             vdos-blogs-discussion_forums(<note>all affiliated to Indian Edu system</note>)
-                            and also Quora('<note>..Im really sorry for my past self but hey, u learn from ur mistakes:)
+                            and also Quora('<note>..Im really sorry for my past self but hey, u learn from ur
+                                mistakes:)
                             </note>
                             '). What I got
-                            from all these is no matter how worse ur clg is, u will meet people who will be contrary to
+                            from all these is no matter how worse ur clg is, u will meet people who will be contrary
+                            to
                             the
                             main
                             stream. For example, creating helpful and interesting Repositories, understanding the
                             concepts
                             and
                             algorithms of COmpetitive Programming and its implication in real
-                            life problem solving, getting our hands dirty in open-source projects. I had read about such
+                            life problem solving, getting our hands dirty in open-source projects. I had read about
+                            such
                             stories
-                            alot. But ohh my poor soul... \'Always expect the unexpected\'. Now Im in 4th semester and
+                            alot. But ohh my poor soul... \'Always expect the unexpected\'. Now Im in 4th semester
+                            and
                             what
                             I
                             understand is all they
-                            want is their teachers(<note>75% of whom r shitty in their own way. Most of these people are
+                            want is their teachers(<note>75% of whom r shitty in their own way. Most of these people
+                                are
                                 only
                                 2-3 yrs
                                 older than us</note>) and peers' attention, getting laid(i.e. the guys) and getting
@@ -563,7 +676,8 @@
                             more
                             worser
                             than typical Engineering Clg bulling (jking :), that kinda bully
-                            is very rare nowadays). After completing BTech, they all r planning to give the GATE(<note>
+                            is very rare nowadays). After completing BTech, they all r planning to give the GATE(
+                            <note>
                                 for
                                 which
                                 they
@@ -571,7 +685,8 @@
                                 jobs(
                                 <note>
                                     sighh.. thats a whole
-                                    another story</note>) and from there to MBA/PHD (<note>as long as their \"frnds\"
+                                    another story</note>) and from there to MBA/PHD (<note>as long as their
+                                    \"frnds\"
                                     doing
                                     the
                                     same</note>) and then
@@ -583,10 +698,12 @@
                             people will then end up as a teacher in a Pvt Clg or University(<note>like my current
                                 teachers
                             </note>). As long
-                            as u r a member of this cycle, society(<note>fsociety btw</note>) will consider u as Normal,
+                            as u r a member of this cycle, society(<note>fsociety btw</note>) will consider u as
+                            Normal,
                             Future
                             of the
-                            Nation, Educated and A worthy Human Being for producing child (<note>not jking</note>). But
+                            Nation, Educated and A worthy Human Being for producing child (<note>not jking</note>).
+                            But
                             if u
                             r
                             someone who is
@@ -611,12 +728,15 @@
                                 Anxiety;
                                 its
                                 like
-                                ur r naked & unarmed amid a bunch of psycopathic thugs with AR, Glock and knife</note>).
-                            From my past experience from my High School I think faking friendship with them is valueless
+                                ur r naked & unarmed amid a bunch of psycopathic thugs with AR, Glock and knife
+                            </note>).
+                            From my past experience from my High School I think faking friendship with them is
+                            valueless
                             for
                             my
                             life. Main reasons for me to choose that clg is , 1. Fees Structure,
-                            2. Ease of travel, 3. Less amount of mandatory strict rules compared to other clgs. So yeah,
+                            2. Ease of travel, 3. Less amount of mandatory strict rules compared to other clgs. So
+                            yeah,
                             4
                             and a
                             half semesters to go and Im getting outta this CULT.
@@ -631,12 +751,16 @@
                     <div style="padding: 30px; border: 1px solid yellow;">
                         <p>🖕</p>
                         <p>- I replied.</p>
-                        <text>Seriously, how the hell do they expect someone who is not willing to attend the fest will
+                        <text>Seriously, how the hell do they expect someone who is not willing to attend the fest
+                            will
                             give
-                            them their demanded money. They even warned me (kinda indirectly..) about my next visit to
-                            college. The guy who called me described himself as a 4th yr ME student. And he was probably
+                            them their demanded money. They even warned me (kinda indirectly..) about my next visit
+                            to
+                            college. The guy who called me described himself as a 4th yr ME student. And he was
+                            probably
                             provoked by one of my colleauge(M Raptan). <a href="https://iiekalyani.github.io/students/"
-                                target="_blank">Here are details about some of the regular male students of 2nd yr.</a>
+                                target="_blank">Here are details about
+                                some of the regular male students of 2nd yr.</a>
                         </text>
                     </div>
                 </article>
@@ -652,15 +776,18 @@
                             veniam
                             ipsa corporis ipsam, repudiandae qui? Culpa, iste qui. Amet optio architecto similique
                             tempora
-                            maxime autem laborum magni, ratione dolorem officiis provident eius necessitatibus iure nisi
+                            maxime autem laborum magni, ratione dolorem officiis provident eius necessitatibus iure
+                            nisi
                             atque
-                            esse illum eos in minus! Rem ratione error quos fugiat, optio sapiente! Error ipsum animi,
+                            esse illum eos in minus! Rem ratione error quos fugiat, optio sapiente! Error ipsum
+                            animi,
                             tenetur
                             reprehenderit beatae nobis vel veniam quis laudantium facere modi eveniet at voluptates
                             magnam
                             inventore ex reiciendis, temporibus, aut accusamus perspiciatis fuga fugiat minus et!
                             Excepturi
-                            consequuntur minus illum, quod, officia, architecto unde reprehenderit odit cum totam ea.
+                            consequuntur minus illum, quod, officia, architecto unde reprehenderit odit cum totam
+                            ea.
                             Quia
                             quod
                             aliquid dignissimos facilis a debitis quas beatae et velit delectus! Vero quis molestiae
@@ -682,7 +809,8 @@
                         </text>
                     </div>
                 </article>
-    </main>
+    </div>
+    <!-- </main> -->
 
     <hr>
     <footer>
