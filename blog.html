@@ -83,6 +83,34 @@
 
         <article>
             <h4>
+                <time>01-05-2022</time>
+                May arrived + It Rained for the 1st time this yr
+            </h4>
+            <div style="padding: 30px; border: 1px solid yellow;">
+                <p>First Nor'westers of the year arrived yesterday</p>
+                <text>
+                    After 19:00. Good rainfall. Till now of writing this, u dont need fan 24*7. Weather is stable (for
+                    now). Sleeped peacefully (i.e. without sweating) last night. Its still around 43°C (feels like) but
+                    humidity has dropped to
+                    63%. At around 21:00, when it was raining with thunderstorms I got a very nostalgic <a
+                        href="https://www.reddit.com/r/LiminalSpace/" target="_blank">LiminalSpace</a>
+                    vibe. Empty alley quenching its months of thrust with the rain water, Mom silently making rotis at a
+                    corner, a little girl practicing some kind of folk music at a distance... I had many similiar
+                    experiences like this before. I hate it as it reminds me of the Past but also love it for the same
+                    reason.
+                    <br>
+                    <br>
+                    Anyway, added PGP-Key (public ofcourse!) cuz everyone have it. U can <a
+                        href="/hdmtp_PGP.txt" target="_blank">VIEW</a> it or import it using gpg
+                    by pasting the following in ur terminal:
+                    <br>
+                    <pre><code>curl -sL https://hdmtp.github.io/hdmtp_PGP.txt | gpg --import</code></pre>
+                </text>
+            </div>
+        </article>
+
+        <article>
+            <h4>
                 <time>29-04-2022</time>
                 Went to the barber
             </h4>
@@ -878,6 +906,13 @@
         }
         showTime();
 
+    </script>
+    <script>
+        function copyThat() {
+            var copyText = document.getElementsByTagName('code');
+            navigator.clipboard.writeText(copyText[0]['textContent']);
+            // alert("Copied the text: " + copyText[0]['textContent']);
+        } 
     </script>
 </body>
 
