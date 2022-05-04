@@ -11,13 +11,14 @@
 </head>
 
 <body>
+    <div id="clock">00:00:00</div>
     <p id="contacts">
         <span>
-            <a href="/" >~/</a>
+            <a href="/">~/</a>
         </span>
     </p>
     <hr>
-<div class="about_media">1. Modern Warfare 2 - <a class="hdmtp">Shadow Company</a> Radio Chatter :</div>
+    <div class="about_media">1. Modern Warfare 2 - <a class="hdmtp">Shadow Company</a> Radio Chatter :</div>
     <div class="mw2">
         <div id="media1">
             <a href="https://www.youtube.com/watch?v=Q3GZ2yisL6Q" target="_blank">
@@ -129,5 +130,39 @@
         </div>
     </div>
     </div>
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            let today = new Date();
+            let date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec + " " + am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = date + " " + currentTime;
+        }
+        showTime();
+
+    </script>
 </body>
+
 </html>

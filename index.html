@@ -17,7 +17,7 @@
     </h3>
     <p id="contacts">
         <span>
-            <a href="/media.html">Media</a>
+            <a href="https://github.com/hdmtp" target="_blank">GitHub</a>
         </span>
         |
         <span>
@@ -29,9 +29,9 @@
         </span>
         |
         <span>
-            <a href="/blog.html">Blog</a>
+            <a href="/feed.xml" target="_blank">Feed</a>
         </span>
-        
+
     </p>
     <hr>
     <div class="about">
@@ -41,12 +41,7 @@
             </li>
             <br>
             <li>
-                Its a pretty <a href="https://motherfuckingwebsite.com" target="_blank"> minimalistic </a> website.
-            </li>
-            <br>
-            <li>
-                RSS Feed : <a href="https://hdmtp.github.io/feed.xml"
-                    target="_blank">https://hdmtp.github.io/feed.xml</a>
+                Its a <a href="https://motherfuckingwebsite.com" target="_blank"> minimalistic </a> website.
             </li>
             <br>
             <li>
@@ -55,6 +50,10 @@
             <br>
             <li>
                 <a href="/walter_bergmann.html">Walter Bergmann</a>
+            </li>
+            <br>
+            <li>
+                <a href="/media.html">Media</a>
             </li>
             <br>
             <li>
@@ -67,14 +66,6 @@
     <footer>
         <p id="useragent"></p>
     </footer>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-    </script>
-    <script>
-        $.getJSON("https://api.ipify.org?format=json", function (data) {
-            $("#ip").html("Welcome - " + data.ip);
-        })
-    </script>
 
     <script>
         let agent = navigator.userAgent;

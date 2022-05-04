@@ -47,6 +47,7 @@ a:hover{
 img {
     width: 320px;
     height: 180px;
+    margin: auto;
 }
 
 .about {
@@ -70,12 +71,13 @@ img {
     color: aliceblue;
 }
 main{
-    margin-top: 100px;
+    margin-top: 20px;
 }
 article {
     color: #fff;
     line-height: 1.4;
     margin-bottom: 80px;
+    
 }
 
 h4 {
