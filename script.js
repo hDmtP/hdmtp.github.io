@@ -7,9 +7,9 @@ const title_arr = [...title_list]
 const body_arr = [...body_list]
 const article_arr = [...article_list]
 
-article_arr.forEach(function(element) {
-    console.log(element['innerText'])
-})
+// article_arr.forEach(function(element) {
+//     console.log(element['innerText'])
+// })
 
 searchInput.addEventListener("input", (e) => {
     const value = e.target.value.toLowerCase()
