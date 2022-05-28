@@ -109,7 +109,9 @@ pre, textarea, input {
 }
 code, textarea {
     font-family: JetBrains Mono, monospace;
-    font-size: 1em;
+    background-color: rgba(24, 19, 19, 0.507);
+    font-size: 0.8em;
+    color: antiquewhite;
     opacity: 30;
 }
 svg, foreignObject{
