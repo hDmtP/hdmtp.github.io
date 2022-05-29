@@ -6,23 +6,23 @@ body {
     font-family: JetBrains Mono, system-ui, sans-serif;
 }
 
-#contacts, #ip, p {
-    color: aqua;
+#contacts,
+#ip,
+p {
+    color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    text-shadow: 0 0 25px #0f0,
-        0 0 50px #0f0,
-        0 0 75px #0f0,
-        0 0 100px #0f0;
-    animation: blog 5s linear infinite;
+}
+#contacts:hover{
+    color: lightgreen;
 }
 
-note{
+note {
     opacity: 0.7;
 }
-note:hover{
+
+note:hover {
     border-bottom: 1px solid whitesmoke;
 }
 
@@ -40,11 +40,14 @@ a {
     color: yellow;
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     border-top: 1px solid yellow;
     border-bottom: 1px solid yellow;
 }
-video, img {
+
+video,
+img {
     width: 320px;
     height: 180px;
     margin: auto;
@@ -67,17 +70,20 @@ video, img {
     border: 1px solid yellow;
     margin-bottom: 15px;
 } */
-.search, input{
+.search,
+input {
     color: aliceblue;
 }
-main{
+
+main {
     margin-top: 20px;
 }
+
 article {
     color: #fff;
     line-height: 1.4;
     margin-bottom: 80px;
-    
+
 }
 
 h4 {
@@ -92,7 +98,10 @@ time {
     font-weight: 400;
     opacity: .7;
 }
-pre, textarea, input {
+
+pre,
+textarea,
+input {
     font-size: 1em;
     color: inherit;
     line-height: inherit;
@@ -105,20 +114,24 @@ pre, textarea, input {
     border: 0;
     border-radius: 4px;
     background: rgba(121, 40, 112, 0.589);
-    box-shadow: inset 1px 1px 0 rgba(0,0,0,.2), inset -1px -1px 0 rgba(0,0,0,.04);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .2), inset -1px -1px 0 rgba(0, 0, 0, .04);
 }
-code, textarea {
+
+code,
+textarea {
     font-family: JetBrains Mono, monospace;
     background-color: rgba(24, 19, 19, 0.507);
     font-size: 0.8em;
     color: antiquewhite;
     opacity: 30;
 }
-svg, foreignObject{
+
+svg,
+foreignObject {
     margin: auto;
 }
 
-@keyframes blog {
+/* @keyframes blog {
     0% {
         filter: hue-rotate(0deg);
     }
@@ -126,7 +139,7 @@ svg, foreignObject{
     100% {
         filter: hue-rotate(360deg);
     }
-}
+} */
 
 .hdmtp {
     color: rgb(251, 255, 0);
@@ -168,4 +181,21 @@ svg, foreignObject{
     border: 2px solid rgb(155, 130, 130);
     border-radius: 20px;
     color: aqua;
+}
+
+footer {
+    color: rgb(29, 47, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    color: rgb(148, 247, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header:hover {
+    color: red;
+    transition: 3s;
 }
