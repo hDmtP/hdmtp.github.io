@@ -47,12 +47,19 @@ a:hover {
     border-bottom: 1px solid yellow;
 }
 
-video,
-img {
-    width: 300px;
-    height: 180px;
-    margin: auto;
-}
+video, 
+img { 
+    width: 300px; 
+    height: 180px; 
+    margin: auto; 
+} 
+
+/*
+video, img {
+	width: 30%;
+	height: auto;
+} 
+*/
 
 .about {
     color: aqua;
@@ -203,4 +210,9 @@ header {
 header:hover {
     color: red;
     transition: 3s;
+}
+
+#figcaption {
+	margin: 0.8em 0 0 0;
+	opacity: .7;
 }
