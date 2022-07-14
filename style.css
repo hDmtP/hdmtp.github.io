@@ -1,9 +1,29 @@
 * {
-    background-color: black;
+    background-color: #222327;
 }
 
 body {
-    font-family: JetBrains Mono, system-ui, sans-serif;
+    /* font-family: JetBrains Mono, system-ui, sans-serif; */
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+li{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i{
+    filter: blur(5px);
+}
+
+i:hover{
+    filter: blur(0px);
+    transition: 1s;
+    margin-bottom: 2px;
 }
 
 #contacts,
@@ -28,7 +48,8 @@ note:hover {
 }
 
 .about_media {
-    color: aqua;
+    /* color: aqua; */
+    color: white;
     margin-top: 75px;
     margin-bottom: 25px;
 }
@@ -62,7 +83,8 @@ video, img {
 */
 
 .about {
-    color: aqua;
+    /* color: aqua; */
+    color: white;
     margin-top: 50px;
     margin-bottom: 150px;
 }
@@ -128,7 +150,8 @@ input {
 code,
 textarea {
     font-family: JetBrains Mono, monospace;
-    background-color: rgba(24, 19, 19, 0.507);
+    /* background-color: rgba(24, 19, 19, 0.507); */
+    background-color: #111;
     font-size: 0.8em;
     color: antiquewhite;
     opacity: 30;
@@ -189,7 +212,8 @@ foreignObject {
     text-align: center;
     border: 2px solid rgb(155, 130, 130);
     border-radius: 20px;
-    color: aqua;
+    /* color: aqua; */
+    color: #fff;
 }
 
 footer {
