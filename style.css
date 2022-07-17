@@ -8,6 +8,10 @@ body {
     font-size: 1.2em;
 }
 
+j {
+	font-size: 2em;
+}
+
 li{
     position: relative;
     cursor: pointer;
