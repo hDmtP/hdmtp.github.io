@@ -155,9 +155,9 @@ code,
 textarea {
     font-family: JetBrains Mono, monospace;
     /* background-color: rgba(24, 19, 19, 0.507); */
-    background-color: #111;
+    background-color: #191970;
     font-size: 0.8em;
-    color: antiquewhite;
+    color: #00FF00;
     opacity: 30;
 }
 
