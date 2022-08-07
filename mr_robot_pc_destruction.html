@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>hdmtp's archive (blog)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    .search-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        color: white;
+    }
+
+    .blog-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+        gap: .25rem;
+        margin-top: 1rem;
+    }
+
+    .hide {
+        opacity: 0.5;
+    }
+
+    main {
+        margin-bottom: 60px;
+    }
+
+    time {
+        padding-right: 20px;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div id="contacts">
+        <span>
+            <a href="/blog.html">~/blog</a>
+        </span>
+    </div>
+    <hr>
+    <h3>
+        <header>Digging into Mr. ROBOT's PC Destruction scenes..</header>
+    </h3>
+    <div class="blog-cards">
+
+
+        <main>
+
+            <article>
+                <h4>
+                    <time>07-08-2022</time>
+                    Not my own article btw. Source is given below ↴
+                </h4>
+                <div style="padding: 30px; border: 1px solid yellow;">
+                    <text>
+                        <p style="border: 1px solid yellow;"><a href="https://qr.ae/pvuiU7" target="_blank">This Quora
+                                article by Eddie Offermann made 'The HDD drilling scene' crystal clear for me</a></p>
+
+                        <h5>
+                            Copying the article for archiving
+                        </h5>
+                        <ul>
+                            <li>It does the most damage to data recovery in the least possible amount of time, barring
+                                access to more thorough mechanical and electromagnetic methods of
+                                data remanence.</li>
+                            <li>
+                                A secure reformat (minimum 3x overrwrite of the entire drive surface - and depending on
+                                who wants your data, you might consider doing it more)
+                                is extremely time-consuming. If you have a great many hours to spare, AND you want to
+                                save the drives for reuse, repetitively overwriting
+                                the drive surface is adequate for "normal" people. It will prevent most basic efforts at
+                                data recovery and is probably fine unless
+                                you think you're about to be raided by people intent on recovering your data. It's not
+                                foolproof though - there have been processes for decades
+                                that can determine what erased bitstates were on a piece of media for the longest amount
+                                of time. Those subsequent overwrites were only
+                                there for a brief moment, and magnetic media has something of a "settling time". Some of
+                                the old data will remain, just smaller
+                                amounts of it than the drive is designed to detect, and it can be recovered using
+                                specialized techniques.
+                            </li>
+                            <li>
+                                Physical destruction of the device (drilling holes in the drive or even running it
+                                through a large commercial shredder) isn't 100% either -
+                                government agencies and commercial enterprises have processes to recover data from small
+                                fragments of drive platters. It won't be like dragging a
+                                file back out of the trash - it's a time-consuming process that typically yields small
+                                fragments of files - but it means your data still
+                                comes back to life. If the data is worth subjectively more than the cost of recovery, at
+                                least some of it will be recovered by a dedicated party.
+                            </li>
+                            <li>
+                                The NSA recommends Degaussing
+                                magnetic media using an NSA approved device appropriate to the Coercivity of the drive
+                                you're erasing - AND that this be followed by physical destruction of the media. Neither
+                                is considered entirely sufficient
+                                on its own, at least in part because while you may be certain that 99.9% of the data is
+                                destroyed, that .1% might still be incredibly damaging.
+                                You don't get to pick which parts remain recoverable - so you have to try as hard as you
+                                can to ensure it's ALL gone.
+                            </li>
+                            <li>
+                                If Elliot had been more prepared, he'd have had a degausser handy - but I've only known
+                                one hacker who kept one around. This was in the olden days,
+                                back in the 1980s, but this friend kept his removable media in a box with a degausser
+                                (powered by a car battery and inverter)
+                                and had panic switches in a couple places in his house to start it. That's not quite the
+                                recommended way of degaussing media, but it gave him a certain
+                                degree of confidence that if his door was kicked in or the FBI came knocking, that he
+                                could press the button and possibly erase a considerable amount of data.
+                                In his eyes, it was better than the alternative and that was probably correct. (There
+                                are a whole separate set of legal issues involved in willful
+                                destruction of evidence - but it's not always about hiding evidence. If you're
+                                blackhatting commercially, there are other unsavory characters that
+                                want your data and if they know they can't just barge in and take it, they might be less
+                                likely to try.)
+                            </li>
+                            <li>
+                                I don't think degaussing has ever been broadly popular in blackhat circles - it's more
+                                of a process that gets used in secure facilities than a device that
+                                individuals use. It's just too cumbersome and you rarely have sufficient warning to use
+                                it in an emergency.
+                                Drilling some holes in your drives and running like hell is probably as good as it gets,
+                                and that's what Elliot did."
+                            </li>
+                        </ul>
+                        <h5>
+                            <br>
+                        </h5>
+                        <ul>
+                            <li>Also check out -&nbsp;<a href="https://en.wikipedia.org/wiki/Cold_boot_attack"
+                                    target="_blank">Cold BOOT Attack</a></li>
+                        </ul>
+                    </text>
+                </div>
+            </article>
+    </div>
+    </main>
+
+    <hr>
+    <footer>
+        <p id="useragent"></p>
+    </footer>
+
+
+    <script>
+        let agent = navigator.userAgent;
+        agentArr = agent.split(" ");
+        // document.getElementById("useragent").innerHTML = "[Browser: " + agentArr[6] + "] - [OS: " + agentArr[2] + " " + agentArr[3] + "]";
+        document.getElementById("useragent").innerHTML = agent;
+    </script>
+</body>
+
+</html>
