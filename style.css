@@ -14,7 +14,7 @@ j {
 
 li{
     position: relative;
-    cursor: pointer;
+    cursor: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,7 +90,7 @@ video, img {
     /* color: aqua; */
     color: white;
     margin-top: 50px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 /* .blog_container {
@@ -159,6 +159,7 @@ textarea {
     font-size: 0.8em;
     color: #00FF00;
     opacity: 30;
+    padding: 5px;
 }
 
 svg,
