@@ -89,7 +89,7 @@ video, img {
 .about {
     /* color: aqua; */
     color: white;
-    margin-top: 50px;
+    margin-top: 15px;
     margin-bottom: 50px;
 }
 
@@ -133,7 +133,6 @@ time {
     opacity: .7;
 }
 
-pre,
 textarea,
 input {
     font-size: 1em;
@@ -222,6 +221,9 @@ foreignObject {
 }
 
 footer {
+    /* position: fixed;
+    bottom: 0;
+    width: 100%; */
     color: whitesmoke;
     display: flex;
     justify-content: center;
