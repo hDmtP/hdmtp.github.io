@@ -13,6 +13,15 @@
       <link>https://hdmtp.github.io/feed.xml</link>
     </image>
     <!-- contents -->
+	<item>
+          <title>just testing the feed</title>
+          <pubDate>29-12-2022</pubDate>
+          <link>https://hdmtp.github.io/blogs/</link>
+          <description><![CDATA[
+          Feed checking.
+          ]]></description>
+	</item>
+    
     <item>
           <title>Visited Shantipur JN</title>
           <pubDate>17-12-2022</pubDate>
