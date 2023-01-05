@@ -14,6 +14,15 @@
     </image>
     <!-- contents -->
 	<item>
+         <title>KWoC 2022 Experience</title>
+         <pubDate>05-01-2023</pubDate>
+         <link>https://hdmtp.github.io/blogs/KWoC2022.html</link>
+         <description><![CDATA[
+         Kharagpur Winter of Code 2022
+         ]]></description>
+	</item>
+    
+	<item>
           <title>just testing the feed</title>
           <pubDate>29-12-2022</pubDate>
           <link>https://hdmtp.github.io/blogs/</link>

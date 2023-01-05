@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>hdmtp's archive (blog)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<style>
+    .search-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        color: white;
+    }
+
+    .blog-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+        gap: .25rem;
+        margin-top: 1rem;
+    }
+
+    .hide {
+        opacity: 0.5;
+    }
+
+    main {
+        margin-bottom: 60px;
+    }
+
+    time {
+        padding-right: 20px;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div id="contacts">
+        <span>
+            <a href="/blog.html">~/blog</a>
+        </span>
+    </div>
+    <hr>
+    <h3>
+        <header>KWoC 2022 Experience</header>
+    </h3>
+    <!-- <div class="blog-cards">
+
+
+        <main>
+
+            <article> -->
+                <h4 style="color:aliceblue;">
+                    <time>05-01-2023</time>
+                    Kharagpur Winter of Code 2022
+                </h4>
+                <div style="padding: 30px; border: 1px solid yellow; color:aliceblue;">
+                    <text>
+                        <p>BTW Happy New Year 2023!</p> 
+                        <ul>
+                            <h5>Intro</h5>
+                            <li>
+                            Kharagpur Winter of Code is a 5-week long online program for students who are new to open source software development. 
+                            The program not only helps students to get involved in open source, 
+                            but also prepares them for many open source summer programs; Google Summer of Code being one of them.
+                            </li>
+                            <h5>Projects I worked on</h5>
+                            <li>
+                                <p style="border: 2px solid aqua; padding: 5px;">
+                                <a href="https://github.com/Pranjal360Agarwal/ApnaBharat-Bus-Booking-Reservation-System" target="_blank">
+                                 ApnaBharat-Bus-Booking-Reservation-System
+                                 </a>
+                                 </p>
+                            </li>
+                            <h5>List of Pull Requests I created</h5>
+                            <li>
+                                <li>
+                                <a href="https://github.com/Pranjal360Agarwal/ApnaBharat-Bus-Booking-Reservation-System/pull/7" target="_blank">
+                                 ContributorList.js Updation
+                                </a>
+                                </li>
+                                <br>
+                                <li>
+                                <a href="https://github.com/Pranjal360Agarwal/ApnaBharat-Bus-Booking-Reservation-System/pull/37" target="_blank">
+                                Improved lock_screen.py
+                                </a>
+                                </li>
+                                <br>
+                                <li>
+                                <a href="https://github.com/Pranjal360Agarwal/ApnaBharat-Bus-Booking-Reservation-System/pull/38" target="_blank">
+                                 Improved Login System Architecture
+                                </a>
+                               	</li>
+                            </li>
+                            <h5>Summary of my work</h5>
+                            <li>
+                                Improved the overall system architecture. Removed redundant code segments from the project. Added several features like 
+                                Color correction. Registering new users in the DataBase via Tkinter GUI.
+                                <br>
+                                Currently working on the Seat Matrix Feature similiar to redBus. Feature to store user passwords through salting/hashing.
+                            </li>
+                            <h5>Learnings</h5>
+                            <li>
+                                Contributing to Open Source projects. Proper communication and collaboration among the peers and fellow contributors.
+                   				Various methods and requirements for opening a PR. Forking a repository, creating a seperate working branch. Proper testing and 
+                   				integration of the newly added features before opening PR. Making sure the new feature doesn't change the core objective of the 
+                   				Program. Proper understanding of each and every code segments in the program. Efficient use of online resources. Googling skills.
+                   				ETC.
+                            </li>
+                        </ul>
+                        <h5>
+                            <br>
+                        </h5>
+                        <ul>
+                            <li>My GitHub link -&nbsp;<a href="https://github.com/hdmtp"
+                                    target="_blank">Pritam Dhara (hDmtP)</a>
+                           	</li>
+                           	<li>
+                                Ideal Institute of Engineering Kalyani. Lines of Code (+/-) = 17/32
+                            </li>
+                        </ul>
+                    </text>
+                </div>
+            <!-- </article>
+    </div>
+    </main> -->
+
+    <hr>
+    <footer>
+        <p id="useragent"></p>
+    </footer>
+
+
+    <script>
+        let agent = navigator.userAgent;
+        agentArr = agent.split(" ");
+        // document.getElementById("useragent").innerHTML = "[Browser: " + agentArr[6] + "] - [OS: " + agentArr[2] + " " + agentArr[3] + "]";
+        document.getElementById("useragent").innerHTML = agent;
+    </script>
+</body>
+
+</html>
