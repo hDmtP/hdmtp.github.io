@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>hdmtp's archive (blog)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<style>
+    .search-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        color: white;
+    }
+
+    .blog-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+        gap: .25rem;
+        margin-top: 1rem;
+    }
+
+    .hide {
+        opacity: 0.5;
+    }
+
+    main {
+        margin-bottom: 60px;
+    }
+
+    time {
+        padding-right: 20px;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div id="contacts">
+        <span>
+            <a href="/blog.html">~/blog</a>
+        </span>
+    </div>
+    <hr>
+    <h3>
+        <header>SEM-5 Results and Afterwards...</header>
+    </h3>
+    <!-- <div class="blog-cards">
+
+
+        <main>
+
+            <article> -->
+                <h4 style="color:aliceblue;">
+                    <time>16-02-2023</time>
+                    Passed with Flying Colours 🎊
+                </h4>
+                <div style="padding: 30px; border: 1px solid yellow; color:aliceblue;">
+                    <text>
+                        <p>SGPA : 8.83</p> 
+                        <ul>
+                            <h5>Expect the unexpected. But this time the unexpected is actually good.</h5> 
+                            <li>
+                            	I did not expect to stretch my score this far in my first OFFLINE exam. I did all I could to atleast get over 6.75 (60%) to keep
+                            	my scholarship secure. I didnt even attend that many classes (near 0 actually 😬). I probably had the lowest internal marks (that
+                            	one given from the college) because of this. And yet not only did I get a shocking 8.83, I somehow topped in my class. How tf is
+                            	this possible? My CA, PCA, attendance was way way low than those top dogs in my class. In addition to that they all had their own
+                            	well-established cheat supply chain networks during the exam. They had the whole MAKAUT organizer micro xeroxed with them. 
+                            	
+                            </li>
+                            <li>
+                            	They are flabbergasted. Not because I topped. But because I was writing all my papers by my own. I neither accepted their cheats nor 
+                            	passed their cheats to others. Didn't want to be in the crossfire. I also secured my MAR (Mandatory Additional Requirements) points 
+                            	for 3rd year which is also a big
+                            	relief.
+                            </li>
+                            <li>
+                            	In these 2 decades of my life I have seen one thing is common. The thing I absolutely did not expect, the alternate possibility
+                            	that my mind did'nt come across at all ends up happening. This case is no different either. Forget about getting the highest marks,
+                            	I was worrying if I would even be able to attend my exams due to my low attendance. When that was sorted out my next trouble was
+                            	if I was gonna pass all my subjects. Because this was the first ever offline semester exam for the 2020 batch. I wasn't sure how hard the 
+                            	checking is going to be. The paper was to be checked twice, 1. Digitally, 2. Manually by the teachers. If marks from the both are the
+                            	same then that is it, or else it will be checked again.
+                            </li>
+                        </ul>
+                        <ul>
+                        	<h5>Afterwards...</h5>
+                        	<li>
+                        		So recently I have developed some inclination towards Quantum Mechanics. Especially its application in Cryptography (e.g. Quantum
+                        		Key Distribution, where we use the polarization/color/hard-or-soft property of photons in a Quantum Entanglement to verify the
+                        		authenticity of data. Any interruption in the photon transmission will led to different results due to quantum superposition.)
+                        		At first I was following the MIT OpenCourseWare playlist for Quantum Mechanics. But soon I realized that those 80 min videos are 
+                        		more focused on their semester syllabus and problem sets more than the concepts. Since then I have found better sources such as
+                        		Institute for Quantum Computing (IQC).
+                        	</li>
+                        	<li>
+                        	<p style="border: 2px solid red; padding: 5px;">
+                        	<a href="https://piped.video/channel/UCjbU8YFYBZAHAIVxY-OBaAQ" target="_blank">Institute for Quantum Computing</a>
+                        	</p>
+                        	</li>
+                        </ul>
+                    </text>
+                </div>
+            <!-- </article>
+    </div>
+    </main> -->
+
+    <hr>
+    <footer>
+        <p id="useragent"></p>
+    </footer>
+
+
+    <script>
+        let agent = navigator.userAgent;
+        agentArr = agent.split(" ");
+        // document.getElementById("useragent").innerHTML = "[Browser: " + agentArr[6] + "] - [OS: " + agentArr[2] + " " + agentArr[3] + "]";
+        document.getElementById("useragent").innerHTML = agent;
+    </script>
+</body>
+
+</html>
