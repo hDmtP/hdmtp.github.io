@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <title>hdmtp's archive (blog)</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<style>
+    .search-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: .25rem;
+        color: white;
+    }
+
+    .blog-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(900px, 1fr));
+        gap: .25rem;
+        margin-top: 1rem;
+    }
+
+    .hide {
+        opacity: 0.5;
+    }
+
+    main {
+        margin-bottom: 60px;
+    }
+
+    time {
+        padding-right: 20px;
+    }
+
+    li {
+        margin-bottom: 20px;
+    }
+</style>
+
+<body>
+    <div id="contacts">
+        <span>
+            <a href="/blog.html">~/blog</a>
+        </span>
+    </div>
+    <hr>
+    <h3>
+        <header>Pain and Suffering</header>
+    </h3>
+    <!-- <div class="blog-cards">
+
+
+        <main>
+
+            <article> -->
+                <h4 style="color:aliceblue;">
+                    <time>10th June, 2023</time>
+                    Exams + VKC + Heatwave + Fever
+                </h4>
+                <div style="padding: 30px; border: 1px solid yellow; color:aliceblue;">
+                    <text>
+                        <p>
+                            VKC = Vernal keratoconjunctivitis
+                        </p>
+                        <ul>
+                        	<li>
+                        		Ok, it's been over 10 fucking days since I got on my computer.
+                        	</li>
+                        	<li>
+                        		Basically after returning from Digha the last 2 days were normal. But then my eyes just started to swell. 
+                        		Also fever. Seeing a bunch of weird goofy ahh fever dreams. First went for homeopathic treatment. Didn't solve shit. 
+                        		Then my eyes started to fucking swell like I was about to go all blind. On top of that I have my 6th sem exam going on. Again on top of that, 
+                        		hot humid weather in addition to the heatwave. We also don't have any AC/Cooler in the home. 3 Fans are all we got. At night when our neighbors turn on their ACs our electricity gets hampered, causing minimal fan speed. Sweating all day and night with
+                        		
+                        					a continuous feeling of sand thrown in your eyes and fever. 
+                        	</li>
+                        	<li>
+                        		After fearing that I may go blind I hurriedly went to Disha Eye Hospital (Barrackpore) on June 3. There I got to know that I have "Vernal Conjunctivitis"
+                        					, a type of virus infection in the eyes (also called red/pink eye or 'Joy Bangla' in Bengali). The doctor said it will take around 2 weeks for it to get normal
+                        					. Got issued 3 eye drops. Mox I, this one kills the DNA of the virus (this shit burned like fucking acid every time I took it) and the other 2 drops to deal 
+                        					with the irritations. And the tests say my Cornea is fine.
+                        	</li>
+                        	<li>
+                        		Now I have to wake up in this condition in the morning at 0630, open my eyes like velcro, clean my eyes with lukewarm water, eat two rotis with curd, wear the uniforms, 
+                        		
+                        					wear the sunglass to both protect my eyes and not scare people away and then cycle 3 km with blurry vision. 
+                        		
+                        					Giving exams while stretching my eye with my fingers. It helped prevent itchiness and irritation. Continuous water flow has led to growing mucus all 
+                        					around my eyes.
+                        	</li>
+                        	<li>
+                        		Fast forward to now, and my eyes are doing pretty well. There still is some redness in my eyes but at least the irritation is gone. Mox I also doesn't hurt, 
+                        					meaning the infection is probably gone. Still have one exam remaining for this SEM on June 12 (Human Resource Development and Organisational Behaviour).
+                        		
+                        					June's 1st week has been an absolute pain and suffering. But life itself is pain and suffering, but more gradual and slower.
+                        		
+                        	</li>
+                        		
+                        </ul>
+                       
+                    </text>
+                </div>
+            <!-- </article>
+    </div>
+    </main> -->
+
+    <hr>
+    <footer>
+        <p id="useragent"></p>
+    </footer>
+
+
+    <script>
+        let agent = navigator.userAgent;
+        agentArr = agent.split(" ");
+        // document.getElementById("useragent").innerHTML = "[Browser: " + agentArr[6] + "] - [OS: " + agentArr[2] + " " + agentArr[3] + "]";
+        document.getElementById("useragent").innerHTML = agent;
+    </script>
+</body>
+
+</html>
